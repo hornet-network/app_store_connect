@@ -326,6 +326,26 @@
     },
     {
       "http_method": "get",
+      "url": "https://api.appstoreconnect.apple.com/v1/apps/{id}/subscriptionGroups",
+      "alias": "subscription_groups"
+    },
+    {
+      "http_method": "get",
+      "url": "https://api.appstoreconnect.apple.com/v1/subscriptionGroups/{id}",
+      "alias": "subscription_group"
+    },
+    {
+      "http_method": "get",
+      "url": "https://api.appstoreconnect.apple.com/v1/subscriptionGroups/{id}/subscriptions",
+      "alias": "subscription_group_subscriptions"
+    },
+    {
+      "http_method": "get",
+      "url": "https://api.appstoreconnect.apple.com/v1/subscriptions/{id}/prices",
+      "alias": "subscription_prices"
+    },
+    {
+      "http_method": "get",
       "url": "https://api.appstoreconnect.apple.com/v2/inAppPurchases/{id}",
       "alias": "in_app_purchase"
     },
@@ -927,10 +947,7 @@
   "types": [
     {
       "type": "BundleIdPlatform",
-      "values": [
-        "IOS",
-        "MAC_OS"
-      ]
+      "values": ["IOS", "MAC_OS"]
     },
     {
       "type": "CapabilityType",
@@ -974,28 +991,15 @@
     },
     {
       "type": "InAppPurchaseType",
-      "values": [
-        "CONSUMABLE",
-        "NON_CONSUMABLE",
-        "NON_RENEWING_SUBSCRIPTION"
-      ]
+      "values": ["CONSUMABLE", "NON_CONSUMABLE", "NON_RENEWING_SUBSCRIPTION"]
     },
     {
       "type": "Platform",
-      "values": [
-        "IOS",
-        "MAC_OS",
-        "TV_OS"
-      ]
+      "values": ["IOS", "MAC_OS", "TV_OS"]
     },
     {
       "type": "PhasedReleaseState",
-      "values": [
-        "INACTIVE",
-        "ACTIVE",
-        "PAUSED",
-        "COMPLETE"
-      ]
+      "values": ["INACTIVE", "ACTIVE", "PAUSED", "COMPLETE"]
     },
     {
       "type": "UserRole",
